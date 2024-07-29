@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Model</title>
+    <style>
+        div.conteiner {
+            background-color: salmon;
+
+            display: flex;
+            flex-flow: row wrap;
+            align-items: stretch;
+            
+            height: 500px;
+        }
+
+        div.item {
+            background-color: aqua;
+            border: 1px solid black;
+            text-align: center;
+
+            padding: 10px;
+            width: 40px;
+        }
+
+        div#n1 {
+            align-self: flex-end;
+        }
+
+        div#n2 {
+            align-self: center;
+        }
+
+        div#n3 {
+            align-self: flex-start;
+        }
+
+        div#n4 {
+            order: -2;
+        }
+
+        div#n5 {
+            order: 2;
+        }
+
+        div#n6 {}
+
+        div#n7 {}
+
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" id="n1">A</div>
+        <div class="item" id="n2">B</div>
+        <div class="item" id="n3">C</div>
+        <div class="item" id="n4">D</div>
+        <div class="item" id="n5">E</div>
+        <div class="item" id="n6">F</div>
+        <div class="item" id="n7">G</div>
+    </div>
+</body>
+</html>

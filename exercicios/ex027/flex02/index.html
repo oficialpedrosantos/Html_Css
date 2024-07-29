@@ -9,7 +9,10 @@
             background-color: salmon;
 
             display: flex;
-            flex-direction: row;
+            flex-flow: row wrap;
+            align-content: space-evenly;
+            height: 400px;
+            width: 200px;
         }
 
         div.item {
@@ -17,9 +20,8 @@
             border: 1px solid black;
             text-align: center;
 
-            margin: 5px;
             padding: 10px;
-            flex: auto;
+            width: 40px;
         }
 
     </style>
