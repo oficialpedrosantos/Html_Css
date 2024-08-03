@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Model</title>
+    <style>
+        div.conteiner {
+            background-color: salmon;
+
+            display: flex;
+            flex-flow: row wrap;
+            align-items: stretch;
+        }
+
+        div.item {
+            background-color: aqua;
+            border: 1px solid black;
+            text-align: center;
+
+            flex-basis: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" id="n1">A</div>
+        <div class="item" id="n2">Outro conteudo</div>
+        <div class="item" id="n3">C</div>
+        <div class="item" id="n4">Conteudo um pouco maior</div>
+        <div class="item" id="n5">E</div>
+        <div class="item" id="n6">Um conteudo maior do que o anterios</div>
+        <div class="item" id="n7">G</div>
+    </div>
+</body>
+</html>
