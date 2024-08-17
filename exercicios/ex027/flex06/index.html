@@ -5,22 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex Model</title>
     <style>
-        main {
-            height: 97vh;
-            width: 97vw;
+        * {
+            margin: 0px;
+        }
+        main.aula {
+            height: 100vh;
+            width: 100vw;
+            align-content: space-around;
+            background-color: blue;
         }
 
         div.conteiner {
-            background-color: salmon;
+            border-radius: 10px;
+            margin: 5px;
+            background-color: white;
+            height: 100px;
 
             display: flex;
             flex-flow: row nowrap;
         }
 
         div.item {
-            background-color: aqua;
-            border: 1px solid black;
+            border-radius: 10px;
+            margin: 1px;
+            background-color: yellow;
+            border: 1px solid slateblue;
             text-align: center;
+            line-height: 100px;
             flex-basis: 100px;
         }
 
@@ -42,7 +53,7 @@
     </style>
 </head>
 <body>
-    <main>
+    <main class="aula">
         <div class="conteiner">
             <div class="item" id="cx1">A</div>
             <div class="item" id="cx2">B</div>
