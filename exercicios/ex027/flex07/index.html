@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Model</title>
+    <style>
+        * {
+            margin: 0px;
+        }
+        main.aula {
+            height: 100vh;
+            width: 100vw;
+            align-content: space-around;
+            background-color: blue;
+        }
+
+        div.conteiner {
+            border-radius: 10px;
+            margin: 5px;
+            background-color: white;
+            height: 100px;
+
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            border-radius: 10px;
+            margin: 1px;
+            background-color: yellow;
+            border: 1px solid slateblue;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        div#cx1 {
+            /*flex = flex-grow + flex-shrink* + flex-basis*/
+            flex: 0 1 150px;
+        }
+
+        div#cx2 {
+            flex: 1 0 150px;
+        }
+
+        div#cx3 {
+            flex: 2 1 150px;
+        }
+
+    </style>
+</head>
+<body>
+    <main class="aula">
+        <div class="conteiner">
+            <div class="item" id="cx1">A</div>
+            <div class="item" id="cx2">B</div>
+            <div class="item" id="cx3">C</div>
+        </div>
+    </main>
+</body>
+</html>
