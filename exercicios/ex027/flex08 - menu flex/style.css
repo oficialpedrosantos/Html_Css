@@ -17,11 +17,23 @@ header {
     background-color: gray;
     color: white;
     padding: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
 }
 
 header > h1 {
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.425);
     margin-bottom: 10px;
+    flex: 0 0 150px;
+}
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
 }
 
 main {
@@ -36,13 +48,16 @@ a {
     text-decoration: none;
     color: white;
     background-color: black;
+    margin: 5px;
     padding: 5px;
     border-radius: 5px;
     font-weight: bold;
-    margin: 5px 5px 5px 0px;
+
 }
 
 a:hover {
     background-color: white;
     color: black;
+
+    transition: .5s;
 }
